@@ -148,6 +148,10 @@ class Program
                     }
                     break;
                 default: //int
+                    if (input == "Q")
+                    {
+                        break;
+                    }
                     current.Spaces = Integer.parseInt(input);
                     moves.add(current);
                     break;
