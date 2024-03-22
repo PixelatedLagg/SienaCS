@@ -87,7 +87,7 @@ class Program
         Move current = new Move();
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
-        while (input != "Q")
+        while (!input.contains("Q"))
         {
             switch (input)
             {
@@ -148,10 +148,6 @@ class Program
                     }
                     break;
                 default: //int
-                    if (input == "Q")
-                    {
-                        break;
-                    }
                     current.Spaces = Integer.parseInt(input);
                     moves.add(current);
                     break;
@@ -170,10 +166,10 @@ class Program
                     System.out.println("*".repeat(40));
                     for (int x = 0; x < 18; x++)
                     {
-                        System.out.println('*');
+                        System.out.print('*');
                         for (int j = 0; j < 38; j++)
                         {
-                            System.out.println(board[x][j]);
+                            System.out.print(board[x][j]);
                         }
                         System.out.println('*');
                     }
@@ -186,10 +182,10 @@ class Program
                         System.out.println("*".repeat(40));
                         for (int x = 0; x < 18; x++)
                         {
-                            System.out.println('*');
+                            System.out.print('*');
                             for (int j = 0; j < 38; j++)
                             {
-                                System.out.println(board[x][j]);
+                                System.out.print(board[x][j]);
                             }
                             System.out.println('*');
                         }
@@ -205,10 +201,10 @@ class Program
         System.out.println("*".repeat(40));
         for (int i = 0; i < 18; i++)
         {
-            System.out.println('*');
+            System.out.print('*');
             for (int j = 0; j < 38; j++)
             {
-                System.out.println(board[i][j]);
+                System.out.print(board[i][j]);
             }
             System.out.println('*');
         }
