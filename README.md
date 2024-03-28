@@ -7,3 +7,10 @@ Sourced from [here](https://contest.sienacs.com/#problems).
 TODO:
 - gold2023-4
 - gold2023-5
+- gold2022-1
+- gold2022-2
+- gold2022-3
+- gold2022-4
+- gold2022-5
+- gold2022-6
+- gold2022-7
