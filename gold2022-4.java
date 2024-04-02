@@ -8,7 +8,7 @@ class Program
         String target = sc.nextLine();
         int num = sc.nextInt();
         String[] guesses = new String[num];
-        for (int i = num - 1; i >= 0; i--)
+        for (int i = 0; i < num; i++)
         {
             guesses[i] = sc.nextLine();
         }
@@ -21,6 +21,10 @@ class Program
                 return;
             }
             Boolean[] filled = new Boolean[5];
+            for (int x = 0; x < 5; x++)
+            {
+                filled[x] = false;
+            }
             for (int j = 0; j < 5; j++)
             {
                 Boolean output = false;
