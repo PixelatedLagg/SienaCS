@@ -1,17 +1,21 @@
-import java.util.Scanner; //broken, still fixing
+import java.util.Scanner;
 
 class Program
 {
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
-        String target = sc.nextLine();
-        int num = sc.nextInt();
+        //String target = sc.nextLine();
+        String target = "SCOUT";
+        int num = 3;
+        //int num = sc.nextInt();
         String[] guesses = new String[num];
+        System.out.println(num);
         for (int i = 0; i < num; i++)
         {
             guesses[i] = sc.nextLine();
         }
+        
         sc.close();
         for (int i = 0; i < num; i++)
         {
